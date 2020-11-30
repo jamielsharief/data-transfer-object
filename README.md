@@ -52,7 +52,7 @@ When you use the `DataTransferObject` constructor, it simply sets the values tha
 The `fromArray` extracts relevant data and it:
 
 1. casts built in types bool, int, string, float etc
-2. will create `Struct`, `DataTransferObject` or any other object that has a `__set_state` magic method including `DateTime` objects.
+2. will create a `DataTransferObject`, `DateTime` or any other object that has a `__set_state` magic method.
 
 It will only extract fields defined in the `DataTransferObject` and will only throw an error, if after extracting data, a property on the `DataTransferObject` was not initialized.
 
