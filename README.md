@@ -1,7 +1,7 @@
 # Data Transfer Object (DTO)
 
 ![license](https://img.shields.io/badge/license-MIT-brightGreen.svg)
-[![build status](https://travis-ci.com/jamielsharief/data-transfer-object.svg?branch=main)](https://travis-ci.com/jamielsharief/data-transfer-object)
+[![build](https://github.com/jamielsharief/data-transfer-object/workflows/CI/badge.svg)](https://github.com/jamielsharief/data-transfer-object/actions)
 [![coverage status](https://coveralls.io/repos/github/jamielsharief/data-transfer-object/badge.svg?branch=main)](https://coveralls.io/github/jamielsharief/data-transfer-object?branch=main)
 
 
