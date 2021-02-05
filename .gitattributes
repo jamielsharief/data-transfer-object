@@ -9,4 +9,4 @@ phpunit.xml.dist export-ignore
 phpcs.xml.dist export-ignore
 CHANGELOG.md export-ignore
 README.md export-ignore
-README.md export-ignore
+.runner.yml export-ignore
