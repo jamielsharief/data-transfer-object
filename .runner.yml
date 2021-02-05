@@ -1,0 +1,10 @@
+name: continuous integration (CI)
+steps:
+  - name: Install Dependencies
+    image: composer
+    commands:
+      - composer install
+  - name: Run PHPunit
+    image: php
+    commands:
+      - vendor/bin/phpunit
