@@ -160,14 +160,14 @@ class Marshaller
         $hasSetState = $this->hasSetStateMethod($className);
 
         $out = [];
-        foreach ($values as $value) {
+        foreach ($values as $key => $value) {
             if (is_array($value) && $hasSetState) {
                 $value = $className::__set_state($value);
             } elseif (! $value instanceof $className) {
                 throw new RuntimeException('Invalid object in array');
             }
             
-            $out[] = $value;
+            $out[$key] = $value;
         }
 
         return $out;

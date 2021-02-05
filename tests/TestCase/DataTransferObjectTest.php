@@ -68,6 +68,10 @@ class DataTransferObjectTest extends TestCase
         $this->assertEquals('Claire', $sarah->toArray()['reportsTo']['name']);
     }
 
+    /**
+     * Check nested array with key
+     * @return void
+     */
     public function testToArrayNestedArray()
     {
         $claire = new Employee([
@@ -75,7 +79,7 @@ class DataTransferObjectTest extends TestCase
             'email' => 'claire@example.com',
             'reportsTo' => null,
             'subordinates' => [
-                new Employee([
+                1 => new Employee([
                     'name' => 'Sarah',
                     'email' => 'sarah@example.com',
                     'reportsTo' => null
@@ -83,7 +87,7 @@ class DataTransferObjectTest extends TestCase
             ]
         ]);
 
-        $this->assertEquals('Sarah', $claire->toArray()['subordinates'][0]['name']);
+        $this->assertEquals('Sarah', $claire->toArray()['subordinates'][1]['name']);
     }
 
     public function testToJson()
